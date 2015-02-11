@@ -1,0 +1,295 @@
+ 
+  /****************************/
+ /***          GLOBAL          ***/
+/***************************/
+
+	
+	html *{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-size: 100%;
+		vertical-align: baseline;
+		background: transparent;
+		
+	}
+		
+		
+		
+	body{	
+		width:850px;
+		margin:auto;
+		font-family: Verdana, Helvetica;
+		background:url("../images/bg_blue_2.gif") #eee repeat-x;	
+		
+	}
+		
+	.button{
+		cursor:pointer;
+		font-weight:bold;
+		text-decoration:none;
+		color:#000;
+
+	}
+
+	.button:hover{
+		color: red;
+
+	}	
+	
+	.error{
+		font-weight:bold;
+		color:red;
+
+	}	
+
+	
+  /*************************/
+ /***          HEAD          ***/
+/*************************/
+
+	
+	
+	#head-wrapper{	
+		width:810px;
+		padding:20px;
+		margin-top:20px;
+		background-color: #eee;
+		border:2px solid #ccc;
+		float:left;
+	}
+	
+	
+	
+	#titleBox{	
+		float:left;
+		background:url("") no-repeat;
+	
+	}
+	
+	
+	
+	#loginBox{	
+		float:right;
+		padding-left:20px;
+		padding-top:20px;
+		visibility:hidden;		
+		width:52%;
+		height:150px;
+		background-color: #cfdae3;
+	}
+	
+	
+	#usernameBox{	
+		float:left;
+		
+	}
+	
+	#username{	
+		margin-right:5px;
+		
+	}
+	
+	
+	#validateImage{	
+		float:right;
+		
+	}
+	
+	
+	
+	#txtUsernameEmpty{	
+		display:none;
+	}
+	
+	
+	#passwordBox{	
+		float:right;
+		margin-right:20px;
+		
+	}
+	
+	#forgot{	
+		
+		float:left;
+		position:absolute;
+		right:70px;
+		
+	}
+	
+	
+	#login{	
+		float:left;
+		
+	}
+	
+	#loginBox .button{	
+		float:right;
+		margin-right:45px;
+	}
+	
+	
+	
+	#loginBox input{	
+		background:#fff;	
+		border:1px solid #ccc;
+	}
+	
+	
+	#signIn{	
+		cursor:pointer;
+		visibility:visible;
+		color: blue;		
+		float:right;
+		margin-top:-20px;
+	}
+	
+	#responseHead{	
+		float:right;
+		padding-left:20px;
+		padding-top:20px;
+		display:none;		
+		width:52%;
+		height:150px;
+		background-color: #cfdae3;
+	}
+	
+	#responseHead2{	
+		float:right;
+		padding-left:20px;
+		padding-top:20px;
+		display:none;		
+		width:52%;
+		height:150px;
+		background-color: #cfdae3;
+	}
+	
+
+	
+  /******************************/
+ /***          CONTENT          ***/
+/*****************************/
+
+	
+	
+	#content-wrapper{		
+		width:810px;
+		padding:20px;
+		/*background-color: #91c8cf;*/
+		background-color: #fff;
+		border:2px solid #ccc;	
+		clear:both;
+		float:left;
+	}
+	
+	
+	
+	#login-main-wrapper{	
+		width:49%;
+		padding:20px;
+		background-color: #eee; 
+		float:left;
+		
+	}
+
+	
+
+	#login-right-column-wrapper{	
+		width:38%;
+		padding:20px;
+		background-color: #eee;
+		float:right;
+	
+	}
+	
+	/*BOTTOM CONTENT*/
+	
+	#bottom-wrapper{	
+		width:770px;
+		padding:20px;	
+		margin-top:20px;
+		border-top:2px dashed #ccc;
+		/*background-color: red; */
+		background-color: #fff; 
+		clear:both;
+		float:left;
+		
+		
+	}
+	
+	
+	
+	#bottom-content1{	
+		width:28%;
+		height:180px;
+		padding:20px;
+		background-color: #fff;
+		float:left;
+		
+	}
+	
+	
+	
+	#bottom-content2{	
+		width:28%;
+		height:180px;
+		padding:20px;
+		background-color: #fff;
+		float:left;
+		
+	}
+	
+	
+	
+	#bottom-content3{	
+		width:28%;
+		height:180px;
+		padding:20px;
+		background-color: #fff;
+		float:left;
+		
+	}
+	
+
+
+  /****************************/
+ /***          FOOTER          ***/
+/***************************/
+	
+	
+	
+	#footer-wrapper{	
+		width:810px;
+		height:20%;
+		padding:20px;
+		background:url("../images/footer_bg.jpg") #fff repeat-x;	
+		border:2px solid #ccc;	
+		clear:both;	
+		float:left;
+	}	
+	
+	
+	
+	#footer-wrapper h4{	
+		float:left;
+	}
+	
+	
+	
+	#footer-wrapper ul{	
+		float:right;
+		
+	}
+	
+	
+	
+	#footer-wrapper ul li{	
+		float:left;
+		margin-right:20px;
+		display:block;
+	}
+		
+		
+		
+		

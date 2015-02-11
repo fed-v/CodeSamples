@@ -1,0 +1,59 @@
+body{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	
+
+}
+
+.Textos {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.Titulos {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #006699;
+}
+
+#loginBox{
+	width:260px;
+	margin:auto;
+	padding:20px;
+	border:1px solid #000;
+	background-color:#dce3f8;
+	
+}
+
+form input{
+	margin-top:10px;
+	margin-left:10px;
+	
+}
+
+.error {
+	font-size: 13px;
+	font-weight: bold;
+	color: red;
+}
+
+#botonesDescarga a{
+	text-decoration:none;
+	margin-right:20px;
+}
+
+
+
+
+
+

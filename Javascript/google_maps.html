@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map Example</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+		html, body, #map-canvas 
+		{
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+		#myLocation
+		{
+			padding: 20px;
+			font-weight: bold;
+			font-family: Arial;
+		}
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+
+		var map;
+				
+		function initialize() {
+									
+			var geocoder = new google.maps.Geocoder();	  
+			var myAddress = "New York";	
+		  		  
+			geocoder.geocode({"address": myAddress},
+				function(results, status) {
+					if (status == google.maps.GeocoderStatus.OK){
+						document.getElementById("myLocation").innerHTML += results[0].formatted_address;
+						var lat = results[0].geometry.location.lat();
+						var lng = results[0].geometry.location.lng();
+						
+						
+						map = new google.maps.Map(document.getElementById('map-canvas'), {zoom: 15, center: new google.maps.LatLng(lat, lng)});
+						
+						var marker = new google.maps.Marker({
+							position: new google.maps.LatLng(lat, lng),
+							map: map,
+							title: results[0].formatted_address
+						});
+						
+						marker.setMap(map);
+						
+					}else{
+						document.getElementById("myLocation").innerHTML += "Unable to retrieve your address" + "<br />";
+					}
+					
+				});			
+		}
+		
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+	<div id="myLocation"></div>
+    <div id="map-canvas"></div>
+  </body>
+</html>

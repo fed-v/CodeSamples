@@ -1,0 +1,272 @@
+ /*	 Reset CSS default properties 	  */
+html *{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	/*background: transparent;*/
+	
+}
+
+h1{
+	font-size:20px;
+	
+}
+
+
+h2{
+	font-size:16px;
+	
+}
+
+
+label{
+	float:left;
+	
+}
+
+
+
+/*******************/
+/*	Tabla Cart	 */
+/******************/
+
+
+.tabla {
+	
+	margin-left:30px;
+	margin-top:15px;
+	border: 1px solid #666;
+	
+}
+
+.Textos {
+	
+	padding-left:10px;
+	
+}
+
+
+.titulos {
+	
+	color:#fff;
+	font-weight:bold;
+	letter-spacing: 1px;
+	
+}
+
+
+.cart {
+	
+	border: 1px solid #666;
+	
+}
+
+
+.cart  td{
+	
+	border-top: 1px solid #666;
+	border-right: 1px solid #666;
+	padding:3px;
+	
+}
+
+
+.tabla  td{
+	
+	
+	border-top: 1px solid #666;
+	border-right: 1px solid #666;
+	padding:3px;
+	
+}
+
+
+.familiaTitulo {
+	
+	font-size: 16px;
+	font-weight:bold;
+	color: #fff;
+	height:50px;
+	
+}
+
+
+.category {
+	
+	font-size: 12px;
+	color: #000;
+	height:30px;
+	padding:10px;
+	
+}
+
+
+
+.title {
+	
+	font-size: 12px;
+	color: #000;
+	background-color:#ccc;
+	height:20px;
+	padding:5px;
+	text-align: center;
+	
+}
+
+
+.error {
+	
+	font-size: 12px;
+	color: red;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+}
+	
+.mandatory{
+		
+	font-size:12px;
+	color:red;
+
+}	
+	
+.description{
+		
+	font-size:10px;
+	color:#666;
+
+}	
+
+
+.cartContent{
+
+	margin:30px;
+	
+}
+
+
+#highlight{
+	
+	background-color:#ebebeb;
+	
+	
+}
+
+
+
+/***********************/
+/*		login		 */
+/*********************/
+
+
+
+#login_wrapper{
+
+	background:url('../images/banner_boutique_NEW.jpg') no-repeat;
+	height:179PX;
+	width:650px;
+	margin-top:10px;
+	margin-left:20px;
+	padding-top:20px;
+	
+	
+}
+
+
+
+#login{
+
+	border: 1px solid #fff;
+	height:130px;
+	width:200px;
+	margin-left:420px;
+	
+	
+}
+
+
+#login_wrapper #loginButton{
+
+	margin-left:128px;
+	margin-top:-30px;
+	
+	
+}
+
+
+
+#login_wrapper #registerButton{
+
+	margin-left:-55px;
+	margin-top:-40px;
+	text-align:center;
+	clear:both;
+	
+	
+}
+
+
+#login_wrapper p{
+
+	margin-left:15px;
+	
+	
+}
+
+
+#login form{
+
+	margin-top:10px;
+	
+}
+
+
+#login #loginButton{
+
+	margin-left:100px;
+	
+}
+
+
+
+
+
+
+/***********************/
+/*	REGISTRATION	 */
+/*********************/
+
+#registrationBody{
+
+	margin-left:20px;
+	margin-top:30px;
+	
+}
+
+
+#login input{
+
+	border: 1px solid #ccc;
+	background-color: #eee;
+
+}
+
+
+#registrationTable input {		
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	background-color: #eee;
+	float:right;
+}
+	
+
+
+
+
+
+
+
+
