@@ -1,0 +1,138 @@
+
+/*	FULLSCREEN BACKGROUND IMAGE*/
+html { 
+  background: url('../img/bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	background-color:transparent;
+	min-height:1000px;
+}
+
+/*	REMOVE DEFAULT BORDER BOTTOM  */
+.navbar-default{
+	border:none;
+	background:transparent;
+}
+
+/*	OVERRIDE DEFAULT MENU LINKS COLORS  */
+.navbar-default .navbar-nav  li  a{
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav  li  a:hover{
+	color: red;
+}
+
+.navbar-default .navbar-brand {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: red;
+}
+.navbar-default .navbar-collapse{
+	border-color:red;
+}
+
+
+/*  CONFIGURE NORMAL AND SHRINK NAVBAR  */	
+.normal {
+	height: 90px;
+	padding-top:10px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.normal .navbar-right {
+	padding-top: 12px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.navbar-brand {
+	padding: 0px !important;
+	color:red;
+}
+
+.navbar-brand img {
+	max-height: 70px; /*  THIS HAS TO BE THE SAME AS THE IMAGE HEIGHT  */	
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.shrink {
+	height: 50px;
+	padding-top:0px;
+	background:#000000;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.shrink .navbar-right {
+	padding-top: 0px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.shrink .navbar-brand img {
+	max-height: 50px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+
+/*  SHRINK ON SMALLER SCREENS  */
+@media (max-width: 768px){
+
+	.normal {
+		height: 50px;
+		padding-top:0px;
+		background:#000000;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		transition: 0.5s;
+	}
+	
+	.navbar-right {
+		padding-top: 0px;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		transition: 0.5s;
+	}
+	
+	.navbar-brand img {
+		max-height: 50px;
+		margin-left:25px;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		transition: 0.5s;
+	}
+	
+	/*	COLLAPSABLE MOBILE MENU STYLES  */
+	.navbar-default .navbar-nav{
+		background:#000000;
+		margin-top:-10px;
+		padding-left:17px;
+	}
+	
+}
