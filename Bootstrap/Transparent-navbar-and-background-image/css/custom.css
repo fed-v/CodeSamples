@@ -138,4 +138,8 @@ body {
 		padding-left:17px;
 	}
 	
+	.navbar-default .navbar-toggle{
+		margin-right:20px;
+	}
+	
 }
