@@ -1,11 +1,17 @@
 
 /*	FULLSCREEN BACKGROUND IMAGE*/
-html { 
-  background: url('../img/bg.jpg') no-repeat center center fixed; 
+html {
+  background: url('../img/bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/*	NO OUTLINES	*/
+html *:active, html *:focus {
+	outline-style: none;
+	-moz-outline-style:none;
 }
 
 body {
@@ -13,8 +19,38 @@ body {
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 400;
 	letter-spacing: 1px;
-	min-height:1000px;
 }
+
+main {
+    min-height:1000px;
+}
+
+footer {
+    text-align: center;
+    color:#bbb;
+}
+
+footer #gradient {
+    height:120px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0+1,1+100 */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjElIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+}
+
+footer #copyright_wrapper {
+    height: 30px;
+    background:#000;
+}
+
+
 
 /*	REMOVE DEFAULT BORDER BOTTOM  */
 .navbar-default{
@@ -22,31 +58,17 @@ body {
 	background:transparent;
 }
 
-/*	OVERRIDE DEFAULT MENU LINKS COLORS  */
-.navbar-default .navbar-nav  li  a{
-	color: #ffffff;
-}
 
-.navbar-default .navbar-nav  li  a:hover{
-	color: red;
-}
-
-.navbar-default .navbar-brand {
-	color: #ffffff;
-}
-
-.navbar-default .navbar-brand:hover {
-	color: red;
-}
 .navbar-default .navbar-collapse{
-	border-color:red;
+	border-color:#222;
 }
 
 
-/*  CONFIGURE NORMAL AND SHRINK NAVBAR  */	
+/*  CONFIGURE NORMAL AND SHRINK NAVBAR  */
 .normal {
 	height: 90px;
 	padding-top:10px;
+
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 	-ms-transition: 0.5s;
@@ -55,19 +77,51 @@ body {
 
 .normal .navbar-right {
 	padding-top: 12px;
+
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 	-ms-transition: 0.5s;
 	transition: 0.5s;
 }
 
-.navbar-brand {
-	padding: 0px !important;
-	color:red;
+
+
+/* LINK COLORS*/
+.navbar-default .navbar-nav > li > a{
+    color: #bbb;
+
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    transition: 1s;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: #840000;
+
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    transition: 1s;
+}
+
+.navbar-default .navbar-nav > li > a:focus{
+    color: #840000;
+}
+
+.navbar-default .navbar-brand:hover {
+	color:#fff;
+}
+
+.navbar-default .navbar-brand {
+    padding: 0px;
+    color: #ffffff;
 }
 
 .navbar-brand img {
-	max-height: 70px; /*  THIS HAS TO BE THE SAME AS THE IMAGE HEIGHT  */	
+	max-height: 70px; /*  THIS HAS TO BE THE SAME AS THE IMAGE HEIGHT  */
+
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 	-ms-transition: 0.5s;
@@ -78,6 +132,7 @@ body {
 	height: 50px;
 	padding-top:0px;
 	background:#000000;
+
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 	-ms-transition: 0.5s;
@@ -86,6 +141,7 @@ body {
 
 .shrink .navbar-right {
 	padding-top: 0px;
+
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 	-ms-transition: 0.5s;
@@ -94,6 +150,7 @@ body {
 
 .shrink .navbar-brand img {
 	max-height: 50px;
+
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 	-ms-transition: 0.5s;
@@ -101,45 +158,97 @@ body {
 }
 
 
-/*  SHRINK ON SMALLER SCREENS  */
+
+
+/***********************************/
+/***        Mobile Devices       ***/
+/***********************************/
+
 @media (max-width: 768px){
 
 	.normal {
 		height: 50px;
 		padding-top:0px;
 		background:#000000;
+
 		-webkit-transition: 0.5s;
 		-moz-transition: 0.5s;
 		-ms-transition: 0.5s;
 		transition: 0.5s;
 	}
-	
+
 	.navbar-right {
 		padding-top: 0px;
+
 		-webkit-transition: 0.5s;
 		-moz-transition: 0.5s;
 		-ms-transition: 0.5s;
 		transition: 0.5s;
 	}
-	
+
 	.navbar-brand img {
 		max-height: 50px;
 		margin-left:25px;
+
 		-webkit-transition: 0.5s;
 		-moz-transition: 0.5s;
 		-ms-transition: 0.5s;
 		transition: 0.5s;
 	}
-	
+
+    /*	OVERRIDE DEFAULT MENU LINKS COLORS  */
+    .navbar-default .navbar-nav  li  a{
+        margin-left:17px;
+    }
+
+    .navbar-default .navbar-nav  li{
+    	background:#000;
+        border-bottom: 1px solid #111;
+
+        -webkit-transition: 1s;
+    	-moz-transition: 1s;
+    	-ms-transition: 1s;
+    	transition: 1s;
+    }
+
+    .navbar-default .navbar-nav  li:hover{
+    	background:#111;
+
+        -webkit-transition: 1s;
+    	-moz-transition: 1s;
+    	-ms-transition: 1s;
+    	transition: 1s;
+    }
+
 	/*	COLLAPSABLE MOBILE MENU STYLES  */
 	.navbar-default .navbar-nav{
 		background:#000000;
-		margin-top:-10px;
-		padding-left:17px;
+		margin-top:-12px;
+
+        opacity: .9;
+        .9-ie: @opacity * 100;
+
 	}
-	
+
+    /*  Hambergur Menu */
 	.navbar-default .navbar-toggle{
 		margin-right:20px;
+        border:none;
 	}
-	
+
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+		background:none;
+        color:#fff;
+	}
+
+}
+
+
+/*  Extra Small Screens*/
+@media (max-width: 480px){
+
+    .navbar-default .navbar-nav  li{
+        text-align: center;
+    }
+
 }

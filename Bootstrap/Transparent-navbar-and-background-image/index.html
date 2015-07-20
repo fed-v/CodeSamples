@@ -4,41 +4,70 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="author" content="Federico Venturino">
+		<meta name="description" content="Easy Transparent Navbar that shrinks on page scroll.">
 		<title>Shrinking Navbar Example</title>
-		<link rel="stylesheet" href="css/bootstrap.css" />
-		<link rel="stylesheet" href="css/custom.css" />	
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/custom.css" />
 	</head>
 	<body>
-		
-		<!-- FIXED NAVBAR -->
-		<nav class="navbar navbar-default navbar-fixed-top normal" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#"><img src="img/logo.png"/> Company</a>
+
+		<header>
+
+			<!-- FIXED NAVBAR -->
+			<nav class="navbar navbar-default navbar-fixed-top normal" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="img/logo.png"/> Company</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div><!--/.nav-collapse -->
+			</nav>
+
+		</header>
+
+		<main>
+			&nbsp;
+		</main>
+
+		<footer>
+			<div id="gradient">
+				&nbsp;
 			</div>
-		</nav>
-						
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.js"></script>
+			<div id="copyright_wrapper">
+				<p id="copyright">&copy;<span id="year">&nbsp;</span> - All rights reserved.</p>
+			</div>
+		</footer>
+
+		<!-- Fastest loading jQuery version -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>if (typeof jQuery === 'undefined') {
+		  	document.write(unescape('js/jquery-2.1.4.min.js'));
+		</script>
+
+		<!-- jQuery Color Framework for animating color changes done in CSS -->
+		<script src="js/jquery.color-2.1.2.min.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+		<!-- Custom Javascript -->
 		<script src="js/script.js"></script>
-	
+
 	</body>
 </html>
